@@ -1,56 +1,22 @@
 
-# Ellection_Analysis
+# Pybe Analysis
 
 ## Overview of the project
-The election commission has requested some additional data to complete the audit:
+Create a summary DataFrame of the ride-sharing data by city type. Then, using Pandas and Matplotlib, create a multiple-line graph that shows the total weekly fares for each city type. Finally, submit a written report that summarizes how the data differs by city type and how those differences can be used by decision-makers at PyBer.
 
-* The voter turnout for each county
-* The percentage of votes from each county out of the total count
-* The county with the highest turnout
+## Results:
 
-## Election Audit Results
+There are more drivers and rides in urban cities, given to this, the amount of total fares is bigger in urban cities compared to rural cities. However, the average dare per ride and average fare per driver is better in rural cities. For this reason it is possible to increase the number of drivers in rural cities.  
 
-1. How many votes were cast in this congressional election?
+![City type comparison](/analysis/tabla1.png)
+![Fare per city type](/analysis/PyBer_fare_summary.png)
 
-369,711
-  
-2. Provide a breakdown of the number of votes and the percentage of total votes for each county in the precinct.
-
-County Votes:
-
-Jefferson: 10.5% 38,855
-
-Denver: 82.8% 306,055
-
-Arapahoe: 6.7% 24,801
-
-3. Which county had the largest number of votes?
-
-Denver
-
-4. Provide a breakdown of the number of votes and the percentage of the total votes each candidate received.
-
-Charles Casper Stockham: 23.0% (85,213)
-Diana DeGette: 73.8% (272,892)
-Raymon Anthony Doane: 3.1% (11,606)
-
-5. Which candidate won the election, what was their vote count, and what was their percentage of the total votes?
-
-Winner: Diana DeGette
-Winning Vote Count: 272,892
-Winning Percentage: 73.8%
-
-## Election Audit Recomendations
-
-We can use the same code to analyze other elections. To achieve this goal we have to consider change some things in our current code
-
-1. The first thing we need to consider is changing the name of files we need to open and the paths
-
-```# Add a variable to load a file from a path.
-file_to_load = os.path.join("Resources", "election_results.csv")
-```
-
-2. The second thing to consider is having the data organized in the same way that it is organized now. For instance:
+## Summary:
 
 
-![Data](imagen_datos.png.png)
+Three business recommendations to the CEO:
+
+1. Increase the number of drivers in rural cities
+2. Review the number of drivers in urban cities (probably they are to many)
+3. Review if all the urban drivers are working a complete journey (the number of driver exceed the numbers of rides)
+
